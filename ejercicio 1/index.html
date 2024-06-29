@@ -16,27 +16,33 @@
     <p>
       Nombres
     </p>
-      <input class="w-80 border border-black border-solid mb-8" id="nombre" type="text">
-    <p>
-      Correo Electronico
-    </p>
-      <input class="w-80 border border-black border-solid mb-8" id="correo" type="text">
+      <input class="w-80 border border-black border-solid mb-8" id="nombre" type="text" required>
+      <button onclick="validarNombre()">Validar Nombre</button>
+      <p id="Validacion"></p>
+    <div>
+      <p>
+        Correo Electronico
+      </p>
+        <input class="w-80 border border-black border-solid" id="correo" type="text" required>
+        <button onclick="validarCorreo()">Validar Correo</button>
+          <p class="mb-8 text-red" id="Validacion"></p>
+    </div>
     <p>
       Telefono
     </p>
-      <input class="w-80 border border-black border-solid mb-8" id="telefono" type="text">
+      <input class="w-80 border border-black border-solid mb-8" id="telefono" type="text" required>
     <p>
       Contraseña
     </p>
-      <input class="w-80 border border-black border-solid mb-8" id="contraseña" type="text">
+      <input class="w-80 border border-black border-solid mb-8" id="contraseña" type="text" required>
     <p>
       Confirmar Contraseña
     </p>
-      <input class="w-80 border border-black border-solid mb-8" id="confirmar" type="text">
+      <input class="w-80 border border-black border-solid mb-8" id="confirmar" type="text" required>
     <p>
       Pasaporte
     </p>
-      <input class="w-80 border border-black border-solid mb-8" id="pasaporte" type="text">
+      <input class="w-80 border border-black border-solid mb-8" id="pasaporte" type="text" required>
     <div>
       <button>ENVIAR</button>
     </div>

@@ -17,3 +17,23 @@ ser igual a la contraseña.
 
 En caso de que los datos no sean válidos, se debe de mostrar un mensaje de error
 debajo del campo que no cumpla con la validación.*/
+
+
+
+
+
+
+
+let input_correo = document.getElementById('correo');
+
+function validarCorreo() {
+  const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const email = input_correo.value;
+
+  if (emailRegex.test(email) == false) {
+    alert('Correo no válido');
+    input_correo.style.backgroundColor = 'red';
+  } else  {
+    input_correo.style.backgroundColor = 'green';
+  }
+}
