@@ -10,41 +10,60 @@
     <p class="text-3xl">
       Formulario de Registro
     </p>
-    <p>
+    <p class="mb-8">
       Favor completar las siguientes solicitudes:
     </p>
-    <p>
-      Nombres
-    </p>
-      <input class="w-80 border border-black border-solid mb-8" id="nombre" type="text" required>
-      <button onclick="validarNombre()">Validar Nombre</button>
-      <p id="Validacion"></p>
     <div>
-      <p>
-        Correo Electronico
-      </p>
-        <input class="w-80 border border-black border-solid" id="correo" type="text" required>
-        <button onclick="validarCorreo()">Validar Correo</button>
-          <p class="mb-8 text-red" id="Validacion"></p>
+      <p class="text-xl">
+        Nombres</p>
+      <P class="text-sm w-80">
+        Debe contener mínimo 2 letras, puede contener espacios, no puede contener caracteres especiales.</P>
+        <input class="w-80 border border-black border-solid mb-8" id="nombre" type="text" required onblur="validarNombre()" >
     </div>
-    <p>
-      Telefono
-    </p>
-      <input class="w-80 border border-black border-solid mb-8" id="telefono" type="text" required>
-    <p>
-      Contraseña
-    </p>
-      <input class="w-80 border border-black border-solid mb-8" id="contraseña" type="text" required>
-    <p>
-      Confirmar Contraseña
-    </p>
-      <input class="w-80 border border-black border-solid mb-8" id="confirmar" type="text" required>
-    <p>
-      Pasaporte
-    </p>
-      <input class="w-80 border border-black border-solid mb-8" id="pasaporte" type="text" required>
     <div>
-      <button>ENVIAR</button>
+      <p class="text-xl">
+        Correo Electrónico
+      </p>
+      <p class="text-sm w-80">
+        El correo debe tener el formato tradicional</p>
+        <input class="w-80 border border-black border-solid mb-8" id="correo" type="text" required onblur="validarCorreo()" >
+    </div>
+    <div>
+      <p class="text-xl">
+        Teléfono
+      </p>
+      <p class="text-sm w-80">
+        El teléfono debe iniciar con el prefijo internacional y tener minimo 12 caracteres y maximo 20.</p>
+        <input class="w-80 border border-black border-solid mb-8" id="telefono" type="text" required onblur="validarTelefono()">
+    </div>
+    <div>
+      <p class="text-xl">
+        Contraseña
+      </p>
+      <p class="text-sm w-80">
+        La contraseña debe tener minimo 8 caracteres</p>
+        <input class="w-80 border border-black border-solid mb-8" id="contraseña" type="text" required onblur="validarContraseña()">
+    </div>
+    <div>
+      <p class="text-xl">
+        Confirmar Contraseña
+      </p>
+      <p class="text-sm w-80">
+        La contraseña debe coincidir con la confirmación</p>
+        <input class="w-80 border border-black border-solid mb-8" id="confirmar" type="text" required onblur="validarConfirmar()">
+    </div>
+    <div>
+      <p class="text-xl">
+        Pasaporte
+      </p>
+      <p class="text-sm w-80">
+        El número de pasaporte debe coincidir con el formato internacional</p>
+        <input class="w-80 border border-black border-solid mb-8" id="pasaporte" type="text" required onblur="validarPasaporte()">
+    </div>
+    <div>
+      <button class="border border-black border-solid rounded p-2" id="enviar" onclick="validardatos()">
+        ENVIAR
+      </button>
     </div>
   </body>
   <script src="./index.js"></script>
