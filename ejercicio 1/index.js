@@ -17,6 +17,12 @@ ser igual a la contraseña.
 
 En caso de que los datos no sean válidos, se debe de mostrar un mensaje de error
 debajo del campo que no cumpla con la validación.*/
+let nombreCorrecto = false
+let correoCorrecto = false
+let telefonoCorrecto = false
+let pasaporteCorrecto = false
+let contraseñaCorrecto = false
+
 
 {let input = document.getElementById('nombre');
 
@@ -29,6 +35,7 @@ debajo del campo que no cumpla con la validación.*/
       input.style.backgroundColor = 'red';
     } else  {
       input.style.backgroundColor = 'green';
+      nombreCorrecto = true
     }
   }
 }
@@ -44,6 +51,7 @@ debajo del campo que no cumpla con la validación.*/
       input.style.backgroundColor = 'red';
     } else  {
       input.style.backgroundColor = 'green';
+      correoCorrecto = true
     }
   }
 }
@@ -59,6 +67,7 @@ debajo del campo que no cumpla con la validación.*/
       input.style.backgroundColor = 'red';
     } else  {
       input.style.backgroundColor = 'green';
+      telefonoCorrecto = true
     }
   }
 }
@@ -74,6 +83,7 @@ debajo del campo que no cumpla con la validación.*/
       input.style.backgroundColor = 'red';
     } else  {
       input.style.backgroundColor = 'green';
+      contraseñaCorrecto = true
     }
   }
 }
@@ -108,19 +118,20 @@ debajo del campo que no cumpla con la validación.*/
       input.style.backgroundColor = 'red';
     } else  {
       input.style.backgroundColor = 'green';
+      pasaporteCorrecto = true
     }
   }
 }
 
-{let enviar = document.getElementById('enviar');
+
 
   function validardatos() {
 
-    if (validarNombre() == true) {
-      enviar.alert('Todos los datos son validos');
+    if ((nombreCorrecto == true && correoCorrecto == true && telefonoCorrecto == true && pasaporteCorrecto == true && contraseñaCorrecto == true)) {
+      alert('Todos los datos son validos');
     } else  {
-      enviar.alert('Por favor verificar los datos');
+      alert('Por favor verificar los datos');
     }
   }
-}
+
 
