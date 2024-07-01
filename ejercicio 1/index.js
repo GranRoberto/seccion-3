@@ -33,17 +33,17 @@ debajo del campo que no cumpla con la validación.*/
   }
 }
 
-{let input_correo = document.getElementById('correo');
+{let input = document.getElementById('correo');
 
   function validarCorreo() {
     let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    let email = input_correo.value;
+    let email = input.value;
 
     if (emailRegex.test(email) == false) {
       alert('Correo no válido');
-      input_correo.style.backgroundColor = 'red';
+      input.style.backgroundColor = 'red';
     } else  {
-      input_correo.style.backgroundColor = 'green';
+      input.style.backgroundColor = 'green';
     }
   }
 }
@@ -115,14 +115,11 @@ debajo del campo que no cumpla con la validación.*/
 {let enviar = document.getElementById('enviar');
 
   function validardatos() {
-    let pasaporteRegex = /^[A-Z]{1,3}[0-9]{7,12}$/;
-    let pasaporte = input.value;
 
-    if (pasaporteRegex.test(pasaporte) == false) {
-      alert('Pasaporte no válido');
-      input.style.backgroundColor = 'red';
+    if (validarNombre() == true) {
+      enviar.alert('Todos los datos son validos');
     } else  {
-      input.style.backgroundColor = 'green';
+      enviar.alert('Por favor verificar los datos');
     }
   }
 }

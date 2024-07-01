@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-bl from-white from-0% via-teal-100 to-green-600 p-12 flex flex-col justify-center items-center h-full">
+    <div>
+      <p>ToDo List</p>
+    </div>
+    <div>
+      <button class="w-44 border border-black border-solid rounded bg-white" onclick="agregar()">
+        Agregar Tarea
+      </button>
+    </div>
+    <div class="" id="tareas">
+      <input class="w-80 border border-black border-solid rounded" type="text">
+      <button class="" onclick="completada()">
+        ✅
+      </button>
+      <button class="" onclick="eliminar()">
+        ❌
+      </button>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
