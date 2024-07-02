@@ -23,7 +23,6 @@ let telefonoCorrecto = false
 let pasaporteCorrecto = false
 let contraseñaCorrecto = false
 
-
 {let input = document.getElementById('nombre');
 
   function validarNombre() {
@@ -122,8 +121,6 @@ let contraseñaCorrecto = false
     }
   }
 }
-
-
 
   function validardatos() {
 
