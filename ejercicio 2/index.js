@@ -12,7 +12,7 @@ function añadir() {
     let lista_tareas = document.createElement('li');
     lista_tareas.innerHTML = `
       <input class="accent-blue-500 h-5 w-5 items-center" type="checkbox">
-      <span>${actividad}</span>
+      <span class="mx-4">${actividad}</span>
       <button class="eliminar">❌ Eliminar</button>
     `;
 
