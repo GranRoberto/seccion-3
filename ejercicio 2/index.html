@@ -6,24 +6,17 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gradient-to-bl from-white from-0% via-teal-100 to-green-600 p-12 flex flex-col justify-center items-center h-full">
+  <body class="p-12 flex flex-col justify-center items-center">
+    <h1>Mi Lista de Tareas</h1>
     <div>
-      <p>ToDo List</p>
+      <input class="border border-black border-solid rounded p-1" type="text" id="tarea"
+      placeholder="Agregar nueva tarea">
+      <button id="agregar">Agregar</button>
     </div>
-    <div>
-      <button class="w-44 border border-black border-solid rounded bg-white" onclick="agregar()">
-        Agregar Tarea
-      </button>
-    </div>
-    <div class="" id="tareas">
-      <input class="w-80 border border-black border-solid rounded" type="text">
-      <button class="" onclick="completada()">
-        ✅
-      </button>
-      <button class="" onclick="eliminar()">
-        ❌
-      </button>
-    </div>
+    <ul class="p-5 flex flex-col justify-center items-center" >
+      <div id="lista">
+      </div>
+    </ul>
   </body>
   <script src="./index.js"></script>
 </html>
